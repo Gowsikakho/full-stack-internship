@@ -1,0 +1,15 @@
+#d1{
+    font-family: regular libre;
+    margin-top: 75px;
+    text-align: center;
+}
+body{
+    background-color: rgb(238, 237, 237);
+    color: rgb(21, 11, 11);
+}
+img{
+    border: 5px solid white;
+}
+h1{
+    text-transform: uppercase;
+}

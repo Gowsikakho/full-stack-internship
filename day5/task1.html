@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Creative CSS Properties</title>
+
+  <!-- ✅ Google Font: Caveat -->
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+  <style>
+    /* ✅ Set root font size */
+    html {
+      font-size: 30px;
+    }
+
+    body {
+      margin: 0;
+      padding: 20px;
+      background: linear-gradient(135deg, #2c3e50, #3498db);
+      color: white;
+      font-size: 18px;
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+
+    p {
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    /* 🎨 1. Coral text */
+    p[value="1"] {
+      color: coral;
+      background-color: #fff2e6;
+      font-weight: bold;
+    }
+
+    /* 🔠 2. Double font size (60px) */
+    p[value="2"] {
+      font-size: 2rem;
+      background-color: #ffeaa7;
+      color: #2d3436;
+    }
+
+    /* 💪 3. Font Weight */
+    p[value="3"] {
+      font-weight: 900;
+      background-color: #dff9fb;
+      color: #130f40;
+      border-left: 6px solid #130f40;
+    }
+
+    /* ✍️ 4. Google Font - Caveat */
+    p[value="4"] {
+      font-family: 'Caveat', cursive;
+      background-color: #f5e6ff;
+      font-size: 1.8rem;
+      color: #6c3483;
+    }
+
+    /* 📐 5. Right aligned */
+    p[value="5"] {
+      text-align: center;
+      background-color: #fdcb6e;
+      color: #2d3436;
+      font-style: italic;
+    }
+
+    /* Hover effect (just for fun) */
+    p:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Important CSS Properties</h1>
+  <p value="1">Color</p>
+  <p value="2">Font Size</p>
+  <p value="3">Font Weight</p>
+  <p value="4">Font Family</p>
+  <p value="5">Text Align</p>
+</body>
+
+</html>
