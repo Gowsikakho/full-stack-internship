@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Grid Emoji Placement</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      height: 100vh;
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      padding: 2rem;
+      background-color: #f5f5f5;
+    }
+
+    .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 4rem;
+      color: white;
+      border-radius: 15px;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+
+    .item:hover {
+      transform: scale(1.05);
+      opacity: 0.95;
+    }
+
+    .cowboy {
+      background-color: #4ec4eb; /* Sky Blue */
+    }
+
+    .astronaut {
+      background-color: #7e57c2; /* Deep Purple */
+    }
+
+    .book {
+      background-color: #009688; /* Teal */
+    }
+
+    .robot {
+      background-color: #ff7043; /* Orange */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item cowboy">🤠</div>
+    <div class="item astronaut">👨‍🚀</div>
+    <div class="item book">📖</div>
+    <div class="item robot">🤖</div>
+  </div>
+</body>
+
+</html>
