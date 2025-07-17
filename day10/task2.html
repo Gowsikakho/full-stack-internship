@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background: #f0f8ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .animated-button {
+      padding: 16px 36px;
+      font-size: 20px;
+      font-weight: bold;
+      background: linear-gradient(135deg, #00bcd4, #2196f3);
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .animated-button:hover {
+      transform: scale(1.08);
+      box-shadow: 0 6px 20px rgba(0, 188, 212, 0.6);
+    }
+  </style>
+</head>
+<body>
+
+  <button class="animated-button">Click to Explore</button>
+
+</body>
+</html>
