@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Float Layout</title>
+  <style>
+    .box {
+      float: left;
+      width: 30%;
+      margin: 1.5%;
+      background-color: skyblue;
+      text-align: center;
+      padding: 20px;
+    }
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <h1>Float Layout</h1>
+  <div class="clearfix">
+    <div class="box">Column 1</div>
+    <div class="box">Column 2</div>
+    <div class="box">Column 3</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- TODO
+1. Make both paragraph elements wrap around the image.
+2. Use Float to move the river div to the left and the mountain div to the right.
+3. Use clear to make the footer go below both the river and mountain div. -->
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Float - Nature Theme</title>
+  <style>
+    div {
+      display: inline-block;
+      width: 40%;
+    }
+
+    p {
+      font-size: 1.5em;
+    }
+
+    img {
+      float: left;
+      margin-right: 10px;
+      width: 120px;
+      height: auto;
+    }
+
+    .river {
+      background-color: lightblue;
+      float: left;
+    }
+
+    .mountain {
+      background-color: lightgreen;
+      float: right;
+    }
+
+    footer {
+      clear: both;
+      text-align: center;
+      background-color: darkgreen;
+      color: white;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="river">
+    <h2>River Stream</h2>
+    <img src="river.jpeg" alt="calm river" />
+    <p>The river flowed gently through the valley, reflecting the sky like a mirror. Fish swam near the surface while
+      children played along the banks. Its calmness brought serenity to everyone nearby.</p>
+  </div>
+
+  <div class="mountain">
+    <h2>Mountain View</h2>
+    <img src="mountain.jpeg" alt="beautiful mountain" />
+    <p>The mountain stood tall against the horizon, its peaks covered in snow. Birds chirped as the wind whispered
+      through the pine trees. It was a peaceful retreat, perfect for hiking and reflection.</p>
+  </div>
+
+  <footer>© 2025 Nature Views. All rights reserved.</footer>
+</body>
+
+</html>

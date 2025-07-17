@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Responsive Pricing Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Roboto", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .pricing-container {
+      display: flex;
+      gap: 30px;
+      padding: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .pricing-plan {
+      background: white;
+      border-radius: 12px;
+      padding: 30px 25px;
+      width: 300px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .pricing-plan:hover {
+      transform: translateY(-8px);
+    }
+
+    .plan-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .plan-price {
+      font-size: 28px;
+      color: #222;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .plan-features {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    .plan-features li {
+      margin: 10px 0;
+      color: #444;
+    }
+
+    .plan-button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .plan-button:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 768px) {
+      .pricing-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="pricing-container">
+    <div class="pricing-plan">
+      <div class="plan-title">Starter</div>
+      <div class="plan-price">$5/month</div>
+      <ul class="plan-features">
+        <li>✅ 5GB Storage</li>
+        <li>✅ Single User</li>
+        <li>🚫 No Priority Support</li>
+      </ul>
+      <button class="plan-button">Choose Plan</button>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Pro</div>
+      <div class="plan-price">$15/month</div>
+      <ul class="plan-features">
+        <li>✅ 50GB Storage</li>
+        <li>✅ Up to 5 Users</li>
+        <li>✅ Email Support</li>
+      </ul>
+      <button class="plan-button">Choose Plan</button>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Enterprise</div>
+      <div class="plan-price">$45/month</div>
+      <ul class="plan-featur
